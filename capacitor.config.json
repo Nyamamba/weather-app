@@ -1,0 +1,5 @@
+{
+  "appId": "com.groupeight.weatherapp",
+  "appName": "Weather",
+  "webDir": "dist"
+}

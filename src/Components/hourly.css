@@ -1,0 +1,45 @@
+/* hourly forecast */
+
+.hourly-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+  overflow-x: auto !important;
+  scrollbar-width: none;
+}
+
+.hourly-container::-webkit-scrollbar{
+  display: none;
+}
+
+.hourly-forecast .hour-card {
+  width: clamp(300px, 50%, 100%);
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  background-color: hsla(208, 100%, 97%, 0.1);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.hourly-forecast .hour-card .hour-time {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.hourly-forecast .hour-card .weather-icon {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: hsla(208, 100%, 97%, 0.1);
+  padding: .5rem;
+  border-radius: 10px;
+}
+
+.hourly-forecast .hour-card .hour-temp {
+  display: grid;
+  place-content: center;
+}

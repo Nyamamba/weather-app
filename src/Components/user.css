@@ -1,0 +1,30 @@
+.user-name{
+    padding: .3rem .6rem;
+    border-radius: 50%;
+}
+.dropdown-menu{
+    padding: .5rem;
+}
+.modal-overlay{
+    background-color: hsla(0, 0%, 0%, .4);
+}
+.option-div{
+    padding: .5rem;
+}
+
+.modal{
+    padding: 1.5rem;
+    text-transform: capitalize;
+}
+
+.modal-button{
+    padding: .1rem .2rem;
+}
+
+.modal-list{
+    padding: .2rem 0 0 0 ;
+}
+
+.modal-heading{
+    margin-bottom: .5rem;
+}

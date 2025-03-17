@@ -1,0 +1,109 @@
+/* current weather */
+.current-page {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+}
+
+.current-page-info {
+  padding: 1rem;
+  width: 100%;
+}
+
+.current-page-info nav {
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-time {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.city-date-time .city {
+  text-transform: capitalize;
+}
+.date-time .time {
+  border-left: 2px solid #eee;
+  padding-left: 0.5rem;
+}
+
+.search-bell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.search-bell .search-bar {
+  display: none;
+}
+
+.big-weather {
+  height: 65%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: white;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.big-weather-child {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.big-weather h1,
+.big-weather h3 {
+  font-family: "Sigmar", serif;
+}
+.big-weather h1 {
+  font-size: 2rem;
+}
+
+.big-weather h3 {
+  font-size: 1rem;
+}
+
+.current-page-forecast {
+  display: none;
+}
+
+@media only screen and (min-width: 1028px) {
+  .big-weather h1 {
+    font-size: 3rem;
+  }
+  
+  .big-weather h3 {
+    font-size: 1.5rem;
+  }
+  .current-page {
+    height: 100vh;
+    width: 100%;
+  }
+  .search-bell .search-bar {
+    display: block;
+  }
+
+  .search-bell .search-icon {
+    display: none;
+  }
+  .big-weather-child {
+    justify-content: flex-end;
+  }
+
+  .big-weather h3 {
+    display: none;
+  }
+}

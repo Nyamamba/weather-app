@@ -1,0 +1,51 @@
+@import "tailwindcss";
+/* 9c0e72e93b6757ac602c9d42c0a0ba88 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-app {
+  font-family: "Inter", sans-serif; /* Default font */
+}
+
+p {
+  font-family: "Poppins", sans-serif; /* For body text */
+}
+
+.main-app {
+  min-width: 100dvw;
+  min-height: 100dvh;
+  position: relative;
+  z-index: 0;
+
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+  }
+}
+
+.main-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1028px) {
+  .main-app {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 0;
+    margin: 0;
+  }
+}

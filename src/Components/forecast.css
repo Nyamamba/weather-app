@@ -1,0 +1,88 @@
+/* forecast */
+.forecast-main {
+  margin-top: 1rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 20px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: relative;
+  gap: 1rem;
+}
+
+.place {
+  width: 100%;
+  border: 1px solid white;
+  padding: 2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.day-temp {
+  font-size: 3rem;
+  font-family: "Sigmar", serif;
+  font: bold;
+  width: 100%;
+  text-align: center;
+  padding-block: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.forecast-title {
+  text-align: center;
+  margin-block: 1rem;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.forecast-days {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.day-date-weather {
+  min-width: 200px;
+}
+
+.day,
+.forecast-temp {
+  text-align: left;
+}
+
+.day {
+  color: white;
+}
+.forecast-temp {
+  padding-left: 0.5rem;
+  border-left: 1px solid #eee;
+}
+
+@media only screen and (min-width: 1028px) {
+  .forecast-main {
+    margin-top: 0;
+    background-color: none;
+    border-radius: 0;
+    height: 100dvh;
+  }
+  .day-date-weather {
+    min-width: none;
+  }
+
+  .forecast-days {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 30px 200px 40px;
+  }
+
+ 
+}
